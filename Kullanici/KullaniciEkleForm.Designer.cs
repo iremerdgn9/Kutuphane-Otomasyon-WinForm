@@ -61,6 +61,7 @@ namespace Kutuphane_Otomasyon_WinForm.Kullanici
             this.button1.TabIndex = 31;
             this.button1.Text = "Kaydet";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // radioK
             // 
@@ -238,6 +239,7 @@ namespace Kutuphane_Otomasyon_WinForm.Kullanici
             this.Name = "KullaniciEkleForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KullaniciEkleForm";
+            this.Load += new System.EventHandler(this.KullaniciEkleForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

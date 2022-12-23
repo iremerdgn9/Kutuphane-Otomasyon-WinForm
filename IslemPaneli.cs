@@ -50,9 +50,9 @@ namespace Kutuphane_Otomasyon_WinForm
         }
 
         private void ekleKullanicibtn_Click(object sender, EventArgs e)
-        {
+        { //işlem panelinde ekle butonuna basınca kullanıcı ekle formu açılıyor ve ekleme işlemi yapıyor.
             Kullanici.KullaniciEkleForm ekleForm = new Kullanici.KullaniciEkleForm();
-            ekleForm.MdiParent = this;
+            ekleForm.MdiParent = this; 
             ekleForm.Show();
         }
     }
