@@ -46,7 +46,7 @@ namespace Kutuphane_Otomasyon_WinForm
             }
             KullaniciListeForm kListeForm = new KullaniciListeForm();
             kListeForm.MdiParent = this; //bunun parent'i IslemPaneli'idir.
-            kListeForm.Show();
+            kListeForm.Show(); //işlem panelinin içinde açılacak.
         }
 
         private void ekleKullanicibtn_Click(object sender, EventArgs e)
