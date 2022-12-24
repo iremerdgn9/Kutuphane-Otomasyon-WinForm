@@ -36,10 +36,10 @@ namespace Kutuphane_Otomasyon_WinForm
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.adGiristxt = new System.Windows.Forms.Label();
-            this.sifreGiristxt = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.ad = new System.Windows.Forms.Label();
+            this.sifre = new System.Windows.Forms.Label();
+            this.adGiristxt = new System.Windows.Forms.TextBox();
+            this.sifreGiristxt = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.personelGirisbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -58,7 +58,7 @@ namespace Kutuphane_Otomasyon_WinForm
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(358, 702);
+            this.panel1.Size = new System.Drawing.Size(371, 702);
             this.panel1.TabIndex = 0;
             // 
             // label5
@@ -106,51 +106,52 @@ namespace Kutuphane_Otomasyon_WinForm
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(358, 469);
+            this.pictureBox1.Size = new System.Drawing.Size(371, 469);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // ad
+            // 
+            this.ad.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ad.Location = new System.Drawing.Point(370, 248);
+            this.ad.Name = "ad";
+            this.ad.Size = new System.Drawing.Size(155, 27);
+            this.ad.TabIndex = 1;
+            this.ad.Text = "Personel Adı:";
+            // 
+            // sifre
+            // 
+            this.sifre.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.sifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.sifre.Location = new System.Drawing.Point(370, 326);
+            this.sifre.Name = "sifre";
+            this.sifre.Size = new System.Drawing.Size(155, 26);
+            this.sifre.TabIndex = 2;
+            this.sifre.Text = "Personel Sifre:";
+            // 
             // adGiristxt
             // 
-            this.adGiristxt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.adGiristxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.adGiristxt.Location = new System.Drawing.Point(370, 248);
+            this.adGiristxt.Location = new System.Drawing.Point(549, 249);
             this.adGiristxt.Name = "adGiristxt";
-            this.adGiristxt.Size = new System.Drawing.Size(143, 27);
-            this.adGiristxt.TabIndex = 1;
-            this.adGiristxt.Text = "Personel Adı:";
+            this.adGiristxt.Size = new System.Drawing.Size(219, 26);
+            this.adGiristxt.TabIndex = 3;
+            this.adGiristxt.TextChanged += new System.EventHandler(this.adGiristxt_TextChanged);
             // 
             // sifreGiristxt
             // 
-            this.sifreGiristxt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.sifreGiristxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.sifreGiristxt.Location = new System.Drawing.Point(370, 326);
+            this.sifreGiristxt.Location = new System.Drawing.Point(549, 326);
             this.sifreGiristxt.Name = "sifreGiristxt";
-            this.sifreGiristxt.Size = new System.Drawing.Size(143, 26);
-            this.sifreGiristxt.TabIndex = 2;
-            this.sifreGiristxt.Text = "Personel Şifre:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(519, 249);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(219, 26);
-            this.textBox1.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(519, 326);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(219, 26);
-            this.textBox2.TabIndex = 4;
+            this.sifreGiristxt.PasswordChar = '*';
+            this.sifreGiristxt.Size = new System.Drawing.Size(219, 26);
+            this.sifreGiristxt.TabIndex = 4;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(553, 121);
+            this.pictureBox2.Location = new System.Drawing.Point(591, 120);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(90, 90);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -160,7 +161,7 @@ namespace Kutuphane_Otomasyon_WinForm
             // personelGirisbtn
             // 
             this.personelGirisbtn.BackColor = System.Drawing.Color.Thistle;
-            this.personelGirisbtn.Location = new System.Drawing.Point(553, 380);
+            this.personelGirisbtn.Location = new System.Drawing.Point(565, 391);
             this.personelGirisbtn.Name = "personelGirisbtn";
             this.personelGirisbtn.Size = new System.Drawing.Size(116, 52);
             this.personelGirisbtn.TabIndex = 6;
@@ -174,13 +175,13 @@ namespace Kutuphane_Otomasyon_WinForm
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(816, 702);
+            this.ClientSize = new System.Drawing.Size(846, 702);
             this.Controls.Add(this.personelGirisbtn);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.sifreGiristxt);
             this.Controls.Add(this.adGiristxt);
+            this.Controls.Add(this.sifre);
+            this.Controls.Add(this.ad);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
@@ -203,10 +204,10 @@ namespace Kutuphane_Otomasyon_WinForm
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label adGiristxt;
-        private System.Windows.Forms.Label sifreGiristxt;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label ad;
+        private System.Windows.Forms.Label sifre;
+        private System.Windows.Forms.TextBox adGiristxt;
+        private System.Windows.Forms.TextBox sifreGiristxt;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button personelGirisbtn;
     }

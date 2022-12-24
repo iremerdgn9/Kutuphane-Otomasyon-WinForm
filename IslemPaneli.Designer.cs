@@ -31,10 +31,6 @@ namespace Kutuphane_Otomasyon_WinForm
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IslemPaneli));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guncelleKullanicibtn = new System.Windows.Forms.Button();
             this.silKullanicibtn = new System.Windows.Forms.Button();
             this.ekleKullanicibtn = new System.Windows.Forms.Button();
@@ -42,22 +38,16 @@ namespace Kutuphane_Otomasyon_WinForm
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightCoral;
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.guncelleKullanicibtn);
             this.panel1.Controls.Add(this.silKullanicibtn);
             this.panel1.Controls.Add(this.ekleKullanicibtn);
@@ -65,62 +55,20 @@ namespace Kutuphane_Otomasyon_WinForm
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 719);
+            this.panel1.Size = new System.Drawing.Size(203, 771);
             this.panel1.TabIndex = 0;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Snow;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(12, 298);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 7;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Snow;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(12, 212);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 6;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Snow;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 121);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Snow;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // guncelleKullanicibtn
             // 
-            this.guncelleKullanicibtn.BackColor = System.Drawing.Color.LavenderBlush;
+            this.guncelleKullanicibtn.BackColor = System.Drawing.Color.MistyRose;
             this.guncelleKullanicibtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guncelleKullanicibtn.FlatAppearance.BorderSize = 0;
             this.guncelleKullanicibtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.guncelleKullanicibtn.Image = ((System.Drawing.Image)(resources.GetObject("guncelleKullanicibtn.Image")));
             this.guncelleKullanicibtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.guncelleKullanicibtn.Location = new System.Drawing.Point(0, 282);
             this.guncelleKullanicibtn.Name = "guncelleKullanicibtn";
-            this.guncelleKullanicibtn.Size = new System.Drawing.Size(200, 91);
+            this.guncelleKullanicibtn.Size = new System.Drawing.Size(203, 91);
             this.guncelleKullanicibtn.TabIndex = 3;
             this.guncelleKullanicibtn.Text = "Güncelle";
             this.guncelleKullanicibtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -128,13 +76,15 @@ namespace Kutuphane_Otomasyon_WinForm
             // 
             // silKullanicibtn
             // 
-            this.silKullanicibtn.BackColor = System.Drawing.Color.LavenderBlush;
+            this.silKullanicibtn.BackColor = System.Drawing.Color.MistyRose;
             this.silKullanicibtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.silKullanicibtn.FlatAppearance.BorderSize = 0;
             this.silKullanicibtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.silKullanicibtn.Image = ((System.Drawing.Image)(resources.GetObject("silKullanicibtn.Image")));
             this.silKullanicibtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.silKullanicibtn.Location = new System.Drawing.Point(0, 191);
             this.silKullanicibtn.Name = "silKullanicibtn";
-            this.silKullanicibtn.Size = new System.Drawing.Size(200, 91);
+            this.silKullanicibtn.Size = new System.Drawing.Size(203, 91);
             this.silKullanicibtn.TabIndex = 2;
             this.silKullanicibtn.Text = "Sil";
             this.silKullanicibtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -142,13 +92,15 @@ namespace Kutuphane_Otomasyon_WinForm
             // 
             // ekleKullanicibtn
             // 
-            this.ekleKullanicibtn.BackColor = System.Drawing.Color.LavenderBlush;
+            this.ekleKullanicibtn.BackColor = System.Drawing.Color.MistyRose;
             this.ekleKullanicibtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ekleKullanicibtn.FlatAppearance.BorderSize = 0;
             this.ekleKullanicibtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ekleKullanicibtn.Image = ((System.Drawing.Image)(resources.GetObject("ekleKullanicibtn.Image")));
             this.ekleKullanicibtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ekleKullanicibtn.Location = new System.Drawing.Point(0, 100);
             this.ekleKullanicibtn.Name = "ekleKullanicibtn";
-            this.ekleKullanicibtn.Size = new System.Drawing.Size(200, 91);
+            this.ekleKullanicibtn.Size = new System.Drawing.Size(203, 91);
             this.ekleKullanicibtn.TabIndex = 1;
             this.ekleKullanicibtn.Text = "Ekle";
             this.ekleKullanicibtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -157,13 +109,14 @@ namespace Kutuphane_Otomasyon_WinForm
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Pink;
+            this.button1.BackColor = System.Drawing.Color.IndianRed;
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 100);
+            this.button1.Size = new System.Drawing.Size(203, 100);
             this.button1.TabIndex = 0;
             this.button1.Text = "Kullanıcılar";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -173,11 +126,13 @@ namespace Kutuphane_Otomasyon_WinForm
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightCoral;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(200, 0);
+            this.panel2.Location = new System.Drawing.Point(203, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1120, 100);
+            this.panel2.Size = new System.Drawing.Size(1158, 100);
             this.panel2.TabIndex = 1;
             // 
             // label1
@@ -189,23 +144,35 @@ namespace Kutuphane_Otomasyon_WinForm
             this.label1.Size = new System.Drawing.Size(647, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "KÜTÜPHANEMİZE  HOŞGELDİNİZ";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(200, 371);
+            this.pictureBox5.Location = new System.Drawing.Point(203, 100);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(1120, 348);
+            this.pictureBox5.Size = new System.Drawing.Size(1158, 671);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 2;
             this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(210, 100);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // IslemPaneli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1320, 719);
+            this.ClientSize = new System.Drawing.Size(1361, 771);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -214,14 +181,10 @@ namespace Kutuphane_Otomasyon_WinForm
             this.Text = "IslemPaneli";
             this.Load += new System.EventHandler(this.IslemPaneli_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -235,10 +198,7 @@ namespace Kutuphane_Otomasyon_WinForm
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

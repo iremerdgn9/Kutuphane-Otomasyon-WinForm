@@ -23,7 +23,7 @@ namespace Kutuphane_Otomasyon_WinForm
             silKullanicibtn.Visible = false; //sil butonu kapalı
             guncelleKullanicibtn.Visible = false;//güncelle butonu kapalı olsun demektir.
             label1.Visible = true;
-            pictureBox1.Visible = true;
+            pictureBox5.Visible = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,8 +33,9 @@ namespace Kutuphane_Otomasyon_WinForm
                 ekleKullanicibtn.Visible = true; //kullanıcılar butonuna basılınca açılacak demektir.
                 silKullanicibtn.Visible = true;
                 guncelleKullanicibtn.Visible = true;
-                label1.Visible = false;
+                label1.Visible = true;
                 pictureBox1.Visible = false;
+                pictureBox5.Visible = false;
             }
             else
             {
@@ -42,7 +43,7 @@ namespace Kutuphane_Otomasyon_WinForm
                 silKullanicibtn.Visible = false;
                 guncelleKullanicibtn.Visible = false;
                 label1.Visible = true;
-                pictureBox1.Visible = true;
+                pictureBox5.Visible = true;
             }
             KullaniciListeForm kListeForm = new KullaniciListeForm();
             kListeForm.MdiParent = this; //bunun parent'i IslemPaneli'idir.

@@ -22,22 +22,26 @@ namespace Kutuphane_Otomasyon_WinForm
             string gelenAd = adGiristxt.Text;
             string gelenSifre = sifreGiristxt.Text;
 
-
             //Linq sorgusu
             var personel = db.Personeller.Where(x => x.personel_ad.Equals(gelenAd) && x.personel_sifre.Equals(gelenSifre)).FirstOrDefault();
 
-            if (personel == null) //personel bir değer bulamadıysa
+            if (personel== null) //personel bir değer bulamadıysa
             {
                 MessageBox.Show(text: "Kullanıcı adı veya şifre hatalı!");
             }
             else
             {
-                MessageBox.Show(text: "Başarılı :)");
+                MessageBox.Show(text: "Başarılı");
                 //işlem başarılı olursa paneli açabilecek.
                 IslemPaneli panel = new IslemPaneli(); //form ismimizi çağırıp nesne oluşturuyoruz.
                 panel.Show();   //butona basınca paneli göster
                 this.Hide();    //bu formu kapat
             }
     }
+
+        private void adGiristxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
