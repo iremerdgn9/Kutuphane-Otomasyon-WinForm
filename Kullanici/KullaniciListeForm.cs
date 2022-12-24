@@ -16,7 +16,7 @@ namespace Kutuphane_Otomasyon_WinForm
         {
             InitializeComponent();
         }
-        public void Listele()
+        public void Listele() //metot oluşturduk
         {
             KutuphaneOtomasyonEntities db = new KutuphaneOtomasyonEntities();
             var kullanicilar = db.Kullanicilar.ToList(); //kullanıcıların hepsini buraya listele
@@ -28,5 +28,7 @@ namespace Kutuphane_Otomasyon_WinForm
             Listele(); //listele metoduna git ve listele
 
         }
+
+
     }
 }
