@@ -82,6 +82,12 @@
     <Compile Include="KullaniciSilForm.Designer.cs">
       <DependentUpon>KullaniciSilForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Kullanici\KullaniciGuncelleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici\KullaniciGuncelleForm.Designer.cs">
+      <DependentUpon>KullaniciGuncelleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kullanici\KullaniciListeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KullaniciSilForm.resx">
       <DependentUpon>KullaniciSilForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici\KullaniciGuncelleForm.resx">
+      <DependentUpon>KullaniciGuncelleForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kullanici\KullaniciListeForm.resx">
       <DependentUpon>KullaniciListeForm.cs</DependentUpon>
