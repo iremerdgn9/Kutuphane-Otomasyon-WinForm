@@ -117,6 +117,9 @@
     <EmbeddedResource Include="KullaniciEkleForm.resx">
       <DependentUpon>KullaniciEkleForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciSilForm.resx">
+      <DependentUpon>KullaniciSilForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Kullanici\KullaniciListeForm.resx">
       <DependentUpon>KullaniciListeForm.cs</DependentUpon>
     </EmbeddedResource>
