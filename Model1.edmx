@@ -16,7 +16,7 @@
           <Property Name="kullanici_mail" Type="nvarchar" MaxLength="50" />
           <Property Name="kullanici_tel" Type="nvarchar" MaxLength="11" />
           <Property Name="kullanici_ceza" Type="float" />
-          <Property Name="kullanici_cinsiyet" Type="nvarchar" MaxLength="1" />
+          <Property Name="kullanici_cinsiyet" Type="nvarchar" MaxLength="10" />
         </EntityType>
         <EntityType Name="Personeller">
           <Key>
@@ -50,7 +50,7 @@
           <Property Name="kullanici_mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="kullanici_tel" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
           <Property Name="kullanici_ceza" Type="Double" />
-          <Property Name="kullanici_cinsiyet" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="kullanici_cinsiyet" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Personeller">
           <Key>

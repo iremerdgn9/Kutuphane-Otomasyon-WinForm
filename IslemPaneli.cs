@@ -50,10 +50,10 @@ namespace Kutuphane_Otomasyon_WinForm
             kListeForm.Show(); //işlem panelinin içinde açılacak.
         }
 
-        private void ekleKullanicibtn_Click(object sender, EventArgs e)
+        private void EkleKullanicibtn_Click(object sender, EventArgs e)
         { //işlem panelinde ekle butonuna basınca kullanıcı ekle formu açılıyor ve ekleme işlemi yapıyor.
             Kullanici.KullaniciEkleForm ekleForm = new Kullanici.KullaniciEkleForm();
-            ekleForm.MdiParent = this; 
+            ekleForm.MdiParent = this;
             ekleForm.Show();
         }
     }

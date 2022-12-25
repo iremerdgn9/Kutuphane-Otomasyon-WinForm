@@ -18,21 +18,10 @@ namespace Kutuphane_Otomasyon_WinForm.Kullanici
         }
         KutuphaneOtomasyonEntities db = new KutuphaneOtomasyonEntities();
 
-        public void Listele()
-        {
-            var kullanicilar = db.Kullanicilar.ToList(); //kullanıcıların hepsini buraya listele
-            dataGridView1.DataSource = kullanicilar.ToList();
-        }
-        private void KullaniciEkleForm_Load(object sender, EventArgs e)
-        {
-            Listele(); //Kullanicilar artık formda listelenecek.
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            Kullanicilar kullanicilar = new Kullanicilar();  //Kullanicilar'dan yeni bir nesne oluşturduk.
-            kullanicilar.kullanici_ad = kullaniciAdtxt.Text;
+            Kullanicilar kullanicilar = new Kullanicilar();  //Kullanicilar tablosundan yeni bir nesne oluşturduk.
+            kullanicilar.kullanici_ad = kullaniciAdtxt.Text; //text değerini al ve kullanıcı ad'a aktar.
             kullanicilar.kullanici_soyad = kullaniciSoyadtxt.Text;
             kullanicilar.kullanici_tc = kullaniciTctxt.Text;
             kullanicilar.kullanici_tel = kullaniciTeltxt.Text;
@@ -42,7 +31,7 @@ namespace Kutuphane_Otomasyon_WinForm.Kullanici
             {
                 kullanicilar.kullanici_cinsiyet = "Erkek";
             }
-            else if (radioK.Checked == true) //radioK butonu işaretli ise
+            else if(radioK.Checked == true) //radioK butonu işaretli ise
             {
                 kullanicilar.kullanici_cinsiyet = "Kadın";
             }
@@ -50,9 +39,20 @@ namespace Kutuphane_Otomasyon_WinForm.Kullanici
             //{
             //    MessageBox.Show("Lütfen Cinsiyet Seçiniz!!"); //hiçbiri değilse mesaj gönderir.
             //}
-            db.Kullanicilar.Add(kullanicilar); //verileri kullanicilar nesnemizin içine aktarıyoruz.
-            db.SaveChanges(); //değişiklikleri kaydeder.
+            db.Kullanicilar.Add(kullanicilar);//verileri kullanicilar nesnemizin içine aktarıyoruz.
+            db.SaveChanges(); //değişiklikleri kaydeder ve insert işlemi yapar.
             Listele(); //listeyi yeniler gibi oldu.
         }
+        public void Listele()
+        {
+            var kullanicilar = db.Kullanicilar.ToList(); //kullanıcıların hepsini buraya listele
+            dataGridView1.DataSource = kullanicilar.ToList(); //veritabanından datagrid veri kaynağını liste tipinde aktarır.
+        }
+        private void KullaniciEkleForm_Load(object sender, EventArgs e)
+        {
+            Listele(); //Kullanicilar artık formda listelenecek.
+
+        }
+
     }
 }

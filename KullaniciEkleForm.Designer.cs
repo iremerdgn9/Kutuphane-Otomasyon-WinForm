@@ -197,7 +197,7 @@ namespace Kutuphane_Otomasyon_WinForm.Kullanici
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(622, 588);
+            this.dataGridView1.Size = new System.Drawing.Size(734, 612);
             this.dataGridView1.TabIndex = 32;
             // 
             // pictureBox1
@@ -205,7 +205,7 @@ namespace Kutuphane_Otomasyon_WinForm.Kullanici
             this.pictureBox1.BackColor = System.Drawing.Color.Salmon;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(155, 58);
+            this.pictureBox1.Location = new System.Drawing.Point(216, 46);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(68, 68);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -217,7 +217,7 @@ namespace Kutuphane_Otomasyon_WinForm.Kullanici
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(1030, 646);
+            this.ClientSize = new System.Drawing.Size(1132, 670);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
