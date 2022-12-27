@@ -19,9 +19,16 @@ namespace Kutuphane_Otomasyon_WinForm
         KutuphaneOtomasyonEntities db = new KutuphaneOtomasyonEntities();
         private void IslemPaneli_Load(object sender, EventArgs e)
         {
+            //kullanıcı butonları girişte kapalıdır. (ekle-güncelle-sil)
             ekleKullanicibtn.Visible = false; //ekle butonu kapalı
             silKullanicibtn.Visible = false; //sil butonu kapalı
             guncelleKullanicibtn.Visible = false;//güncelle butonu kapalı olsun demektir.
+            //kaynak butonları girişte kapalıdır (ekle-güncelle-sil)
+            ekleKaynakbtn.Visible = false;
+            silKaynakbtn.Visible = false;
+            guncelleKaynakbtn.Visible = false;
+
+
             label1.Visible = true;
             pictureBox5.Visible = true;
         }
@@ -70,6 +77,22 @@ namespace Kutuphane_Otomasyon_WinForm
             kGuncel.MdiParent = this;
             kGuncel.Show();
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (ekleKaynakbtn.Visible == false) 
+            {
+                ekleKaynakbtn.Visible = true;
+                silKaynakbtn.Visible = true;
+                guncelleKaynakbtn.Visible = true;
+            }
+            else
+            {
+                ekleKaynakbtn.Visible = false;
+                silKaynakbtn.Visible = false;
+                guncelleKaynakbtn.Visible = false;
+            }
         }
     }
 }
