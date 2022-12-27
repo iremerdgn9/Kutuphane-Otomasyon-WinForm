@@ -56,8 +56,9 @@ namespace Kutuphane_Otomasyon_WinForm.Kullanici
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(282, 49);
             this.button1.TabIndex = 47;
-            this.button1.Text = "Kaydet";
+            this.button1.Text = "Güncelle";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // radioK
             // 
@@ -195,6 +196,7 @@ namespace Kutuphane_Otomasyon_WinForm.Kullanici
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(1086, 644);
             this.dataGridView1.TabIndex = 48;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // KullaniciGuncelleForm
             // 

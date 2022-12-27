@@ -73,6 +73,7 @@ namespace Kutuphane_Otomasyon_WinForm
             this.guncelleKullanicibtn.Text = "Güncelle";
             this.guncelleKullanicibtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.guncelleKullanicibtn.UseVisualStyleBackColor = false;
+            this.guncelleKullanicibtn.Click += new System.EventHandler(this.guncelleKullanicibtn_Click);
             // 
             // silKullanicibtn
             // 

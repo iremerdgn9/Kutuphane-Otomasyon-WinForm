@@ -52,7 +52,7 @@ namespace Kutuphane_Otomasyon_WinForm
 
         private void EkleKullanicibtn_Click(object sender, EventArgs e)
         { //işlem panelinde ekle butonuna basınca kullanıcı ekle formu açılıyor ve ekleme işlemi yapıyor.
-            Kullanici.KullaniciEkleForm ekleForm = new Kullanici.KullaniciEkleForm();
+            Kullanici.KullaniciEkleForm ekleForm= new Kullanici.KullaniciEkleForm();
             ekleForm.MdiParent = this;
             ekleForm.Show();
         }
@@ -62,6 +62,14 @@ namespace Kutuphane_Otomasyon_WinForm
             KullaniciSilForm kSil = new KullaniciSilForm(); //sil butonuna tıkladığımızda sil formu açılacak.
             kSil.MdiParent = this;
             kSil.Show();
+        }
+
+        private void guncelleKullanicibtn_Click(object sender, EventArgs e)
+        {
+            Kullanici.KullaniciGuncelleForm kGuncel = new Kullanici.KullaniciGuncelleForm();
+            kGuncel.MdiParent = this;
+            kGuncel.Show();
+
         }
     }
 }
