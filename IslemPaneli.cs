@@ -93,6 +93,10 @@ namespace Kutuphane_Otomasyon_WinForm
                 silKaynakbtn.Visible = false;
                 guncelleKaynakbtn.Visible = false;
             }
+
+            Kaynak.KaynakListeForm kliste = new Kaynak.KaynakListeForm();
+            kliste.MdiParent = this;
+            kliste.Show();
         }
     }
 }

@@ -126,6 +126,9 @@
     <EmbeddedResource Include="IslemPaneli.resx">
       <DependentUpon>IslemPaneli.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Kaynak\KaynakListeForm.resx">
+      <DependentUpon>KaynakListeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Kullanici\KullaniciEkleForm.resx">
       <DependentUpon>KullaniciEkleForm.cs</DependentUpon>
     </EmbeddedResource>

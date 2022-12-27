@@ -28,7 +28,5 @@ namespace Kutuphane_Otomasyon_WinForm
             Listele(); //listele metoduna git ve listele
 
         }
-
-
     }
 }
