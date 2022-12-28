@@ -40,17 +40,19 @@ namespace Kutuphane_Otomasyon_WinForm.Kaynak
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(1304, 670);
+            this.dataGridView1.Size = new System.Drawing.Size(1304, 697);
             this.dataGridView1.TabIndex = 0;
             // 
             // KaynakListeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1304, 670);
+            this.ClientSize = new System.Drawing.Size(1304, 697);
             this.Controls.Add(this.dataGridView1);
             this.Name = "KaynakListeForm";
             this.Text = "KaynakListeForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.KaynakListeForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

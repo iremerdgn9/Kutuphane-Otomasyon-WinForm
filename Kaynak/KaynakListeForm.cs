@@ -16,5 +16,11 @@ namespace Kutuphane_Otomasyon_WinForm.Kaynak
         {
             InitializeComponent();
         }
+        KutuphaneOtomasyonEntities db = new KutuphaneOtomasyonEntities();
+        private void KaynakListeForm_Load(object sender, EventArgs e)
+        {
+            var kaynaklar = db.Kaynaklar.ToList();
+            dataGridView1.DataSource = kaynaklar.ToList(); //kaynaklar tablosunu datagrid'e liste olarak atar.
+        }
     }
 }
