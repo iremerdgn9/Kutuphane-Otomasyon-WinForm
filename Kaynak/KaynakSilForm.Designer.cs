@@ -44,6 +44,7 @@ namespace Kutuphane_Otomasyon_WinForm.Kaynak
             this.button1.TabIndex = 0;
             this.button1.Text = "Sil";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
@@ -65,6 +66,7 @@ namespace Kutuphane_Otomasyon_WinForm.Kaynak
             this.Controls.Add(this.button1);
             this.Name = "KaynakSilForm";
             this.Text = "KaynakSilForm";
+            this.Load += new System.EventHandler(this.KaynakSilForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
