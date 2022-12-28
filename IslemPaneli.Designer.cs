@@ -114,6 +114,7 @@ namespace Kutuphane_Otomasyon_WinForm
             this.ekleKaynakbtn.Text = "Ekle";
             this.ekleKaynakbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ekleKaynakbtn.UseVisualStyleBackColor = false;
+            this.ekleKaynakbtn.Click += new System.EventHandler(this.ekleKaynakbtn_Click);
             // 
             // button2
             // 

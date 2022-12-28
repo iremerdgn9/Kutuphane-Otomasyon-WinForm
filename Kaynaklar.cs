@@ -18,7 +18,7 @@ namespace Kutuphane_Otomasyon_WinForm
         public string kaynak_ad { get; set; }
         public string kaynak_yazar { get; set; }
         public string kaynak_yayınevi { get; set; }
-        public Nullable<int> kaynak_sayfasayisi { get; set; }
+        public Nullable<int> kaynak_sayfasayisi { get; set; } //nullable: null olabilir demek.
         public Nullable<System.DateTime> kaynak_basımtarihi { get; set; }
         public string kaynak_türü { get; set; }
     }

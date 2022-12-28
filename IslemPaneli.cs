@@ -102,5 +102,13 @@ namespace Kutuphane_Otomasyon_WinForm
             kliste.MdiParent = this;
             kliste.Show();
         }
+
+        private void ekleKaynakbtn_Click(object sender, EventArgs e)
+        { //ekle butonuna basınca kaynak ekle formundan kaynak ekleme işlemi yapılacak.
+            Kaynak.KaynakEkleForm kEkle= new Kaynak.KaynakEkleForm();
+            kEkle.MdiParent = this;
+            kEkle.Show();
+
+        }
     }
 }

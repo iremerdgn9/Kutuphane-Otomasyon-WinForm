@@ -31,10 +31,10 @@ namespace Kutuphane_Otomasyon_WinForm.Kaynak
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
-            this.kullaniciTeltxt = new System.Windows.Forms.TextBox();
-            this.kullaniciTctxt = new System.Windows.Forms.TextBox();
-            this.kullaniciSoyadtxt = new System.Windows.Forms.TextBox();
-            this.kullaniciAdtxt = new System.Windows.Forms.TextBox();
+            this.türKaynaktxt = new System.Windows.Forms.TextBox();
+            this.yayıneviKaynaktxt = new System.Windows.Forms.TextBox();
+            this.yazarKaynaktxt = new System.Windows.Forms.TextBox();
+            this.adKaynaktxt = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -54,47 +54,48 @@ namespace Kutuphane_Otomasyon_WinForm.Kaynak
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(849, 520);
+            this.dataGridView1.Size = new System.Drawing.Size(1062, 520);
             this.dataGridView1.TabIndex = 0;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Tomato;
             this.button1.Font = new System.Drawing.Font("Segoe Script", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(86, 440);
+            this.button1.Location = new System.Drawing.Point(81, 430);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(282, 49);
             this.button1.TabIndex = 47;
             this.button1.Text = "Kaydet";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // kullaniciTeltxt
+            // türKaynaktxt
             // 
-            this.kullaniciTeltxt.Location = new System.Drawing.Point(176, 321);
-            this.kullaniciTeltxt.Name = "kullaniciTeltxt";
-            this.kullaniciTeltxt.Size = new System.Drawing.Size(192, 26);
-            this.kullaniciTeltxt.TabIndex = 42;
+            this.türKaynaktxt.Location = new System.Drawing.Point(194, 357);
+            this.türKaynaktxt.Name = "türKaynaktxt";
+            this.türKaynaktxt.Size = new System.Drawing.Size(192, 26);
+            this.türKaynaktxt.TabIndex = 42;
             // 
-            // kullaniciTctxt
+            // yayıneviKaynaktxt
             // 
-            this.kullaniciTctxt.Location = new System.Drawing.Point(176, 242);
-            this.kullaniciTctxt.Name = "kullaniciTctxt";
-            this.kullaniciTctxt.Size = new System.Drawing.Size(192, 26);
-            this.kullaniciTctxt.TabIndex = 40;
+            this.yayıneviKaynaktxt.Location = new System.Drawing.Point(194, 242);
+            this.yayıneviKaynaktxt.Name = "yayıneviKaynaktxt";
+            this.yayıneviKaynaktxt.Size = new System.Drawing.Size(192, 26);
+            this.yayıneviKaynaktxt.TabIndex = 40;
             // 
-            // kullaniciSoyadtxt
+            // yazarKaynaktxt
             // 
-            this.kullaniciSoyadtxt.Location = new System.Drawing.Point(176, 198);
-            this.kullaniciSoyadtxt.Name = "kullaniciSoyadtxt";
-            this.kullaniciSoyadtxt.Size = new System.Drawing.Size(192, 26);
-            this.kullaniciSoyadtxt.TabIndex = 39;
+            this.yazarKaynaktxt.Location = new System.Drawing.Point(194, 198);
+            this.yazarKaynaktxt.Name = "yazarKaynaktxt";
+            this.yazarKaynaktxt.Size = new System.Drawing.Size(192, 26);
+            this.yazarKaynaktxt.TabIndex = 39;
             // 
-            // kullaniciAdtxt
+            // adKaynaktxt
             // 
-            this.kullaniciAdtxt.Location = new System.Drawing.Point(176, 156);
-            this.kullaniciAdtxt.Name = "kullaniciAdtxt";
-            this.kullaniciAdtxt.Size = new System.Drawing.Size(192, 26);
-            this.kullaniciAdtxt.TabIndex = 38;
+            this.adKaynaktxt.Location = new System.Drawing.Point(194, 156);
+            this.adKaynaktxt.Name = "adKaynaktxt";
+            this.adKaynaktxt.Size = new System.Drawing.Size(192, 26);
+            this.adKaynaktxt.TabIndex = 38;
             // 
             // label6
             // 
@@ -158,16 +159,16 @@ namespace Kutuphane_Otomasyon_WinForm.Kaynak
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(176, 276);
+            this.numericUpDown1.Location = new System.Drawing.Point(194, 276);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(192, 26);
             this.numericUpDown1.TabIndex = 48;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(168, 363);
+            this.dateTimePicker1.Location = new System.Drawing.Point(194, 316);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(192, 26);
             this.dateTimePicker1.TabIndex = 49;
             // 
             // KaynakEkleForm
@@ -175,14 +176,14 @@ namespace Kutuphane_Otomasyon_WinForm.Kaynak
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(1285, 701);
+            this.ClientSize = new System.Drawing.Size(1498, 701);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.kullaniciTeltxt);
-            this.Controls.Add(this.kullaniciTctxt);
-            this.Controls.Add(this.kullaniciSoyadtxt);
-            this.Controls.Add(this.kullaniciAdtxt);
+            this.Controls.Add(this.türKaynaktxt);
+            this.Controls.Add(this.yayıneviKaynaktxt);
+            this.Controls.Add(this.yazarKaynaktxt);
+            this.Controls.Add(this.adKaynaktxt);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -203,10 +204,10 @@ namespace Kutuphane_Otomasyon_WinForm.Kaynak
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox kullaniciTeltxt;
-        private System.Windows.Forms.TextBox kullaniciTctxt;
-        private System.Windows.Forms.TextBox kullaniciSoyadtxt;
-        private System.Windows.Forms.TextBox kullaniciAdtxt;
+        private System.Windows.Forms.TextBox türKaynaktxt;
+        private System.Windows.Forms.TextBox yayıneviKaynaktxt;
+        private System.Windows.Forms.TextBox yazarKaynaktxt;
+        private System.Windows.Forms.TextBox adKaynaktxt;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
