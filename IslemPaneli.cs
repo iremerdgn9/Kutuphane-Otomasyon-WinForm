@@ -86,12 +86,16 @@ namespace Kutuphane_Otomasyon_WinForm
                 ekleKaynakbtn.Visible = true;
                 silKaynakbtn.Visible = true;
                 guncelleKaynakbtn.Visible = true;
+                pictureBox5.Visible = false;
+
             }
             else
             {
                 ekleKaynakbtn.Visible = false;
                 silKaynakbtn.Visible = false;
                 guncelleKaynakbtn.Visible = false;
+                pictureBox5.Visible = true;
+
             }
 
             Kaynak.KaynakListeForm kliste = new Kaynak.KaynakListeForm();

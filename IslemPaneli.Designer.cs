@@ -31,6 +31,10 @@ namespace Kutuphane_Otomasyon_WinForm
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IslemPaneli));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guncelleKaynakbtn = new System.Windows.Forms.Button();
+            this.silKaynakbtn = new System.Windows.Forms.Button();
+            this.ekleKaynakbtn = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.guncelleKullanicibtn = new System.Windows.Forms.Button();
             this.silKullanicibtn = new System.Windows.Forms.Button();
             this.ekleKullanicibtn = new System.Windows.Forms.Button();
@@ -39,10 +43,6 @@ namespace Kutuphane_Otomasyon_WinForm
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.ekleKaynakbtn = new System.Windows.Forms.Button();
-            this.silKaynakbtn = new System.Windows.Forms.Button();
-            this.guncelleKaynakbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -66,6 +66,70 @@ namespace Kutuphane_Otomasyon_WinForm
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(203, 712);
             this.panel1.TabIndex = 0;
+            // 
+            // guncelleKaynakbtn
+            // 
+            this.guncelleKaynakbtn.BackColor = System.Drawing.Color.MistyRose;
+            this.guncelleKaynakbtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guncelleKaynakbtn.FlatAppearance.BorderSize = 0;
+            this.guncelleKaynakbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.guncelleKaynakbtn.Image = ((System.Drawing.Image)(resources.GetObject("guncelleKaynakbtn.Image")));
+            this.guncelleKaynakbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.guncelleKaynakbtn.Location = new System.Drawing.Point(0, 655);
+            this.guncelleKaynakbtn.Name = "guncelleKaynakbtn";
+            this.guncelleKaynakbtn.Size = new System.Drawing.Size(177, 91);
+            this.guncelleKaynakbtn.TabIndex = 7;
+            this.guncelleKaynakbtn.Text = "Guncelle";
+            this.guncelleKaynakbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.guncelleKaynakbtn.UseVisualStyleBackColor = false;
+            // 
+            // silKaynakbtn
+            // 
+            this.silKaynakbtn.BackColor = System.Drawing.Color.MistyRose;
+            this.silKaynakbtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.silKaynakbtn.FlatAppearance.BorderSize = 0;
+            this.silKaynakbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.silKaynakbtn.Image = ((System.Drawing.Image)(resources.GetObject("silKaynakbtn.Image")));
+            this.silKaynakbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.silKaynakbtn.Location = new System.Drawing.Point(0, 564);
+            this.silKaynakbtn.Name = "silKaynakbtn";
+            this.silKaynakbtn.Size = new System.Drawing.Size(177, 91);
+            this.silKaynakbtn.TabIndex = 6;
+            this.silKaynakbtn.Text = "Sil";
+            this.silKaynakbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.silKaynakbtn.UseVisualStyleBackColor = false;
+            // 
+            // ekleKaynakbtn
+            // 
+            this.ekleKaynakbtn.BackColor = System.Drawing.Color.MistyRose;
+            this.ekleKaynakbtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ekleKaynakbtn.FlatAppearance.BorderSize = 0;
+            this.ekleKaynakbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ekleKaynakbtn.Image = ((System.Drawing.Image)(resources.GetObject("ekleKaynakbtn.Image")));
+            this.ekleKaynakbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ekleKaynakbtn.Location = new System.Drawing.Point(0, 473);
+            this.ekleKaynakbtn.Name = "ekleKaynakbtn";
+            this.ekleKaynakbtn.Size = new System.Drawing.Size(177, 91);
+            this.ekleKaynakbtn.TabIndex = 5;
+            this.ekleKaynakbtn.Text = "Ekle";
+            this.ekleKaynakbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ekleKaynakbtn.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.IndianRed;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 373);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(177, 100);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Kaynaklar";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // guncelleKullanicibtn
             // 
@@ -161,8 +225,9 @@ namespace Kutuphane_Otomasyon_WinForm
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(227, 36);
+            this.label1.Location = new System.Drawing.Point(323, 33);
             this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label1.Size = new System.Drawing.Size(647, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "KÜTÜPHANEMİZE  HOŞGELDİNİZ";
@@ -178,70 +243,6 @@ namespace Kutuphane_Otomasyon_WinForm
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 2;
             this.pictureBox5.TabStop = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.IndianRed;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 373);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(177, 100);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Kaynaklar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // ekleKaynakbtn
-            // 
-            this.ekleKaynakbtn.BackColor = System.Drawing.Color.MistyRose;
-            this.ekleKaynakbtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ekleKaynakbtn.FlatAppearance.BorderSize = 0;
-            this.ekleKaynakbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ekleKaynakbtn.Image = ((System.Drawing.Image)(resources.GetObject("ekleKaynakbtn.Image")));
-            this.ekleKaynakbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ekleKaynakbtn.Location = new System.Drawing.Point(0, 473);
-            this.ekleKaynakbtn.Name = "ekleKaynakbtn";
-            this.ekleKaynakbtn.Size = new System.Drawing.Size(177, 91);
-            this.ekleKaynakbtn.TabIndex = 5;
-            this.ekleKaynakbtn.Text = "Ekle";
-            this.ekleKaynakbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ekleKaynakbtn.UseVisualStyleBackColor = false;
-            // 
-            // silKaynakbtn
-            // 
-            this.silKaynakbtn.BackColor = System.Drawing.Color.MistyRose;
-            this.silKaynakbtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.silKaynakbtn.FlatAppearance.BorderSize = 0;
-            this.silKaynakbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.silKaynakbtn.Image = ((System.Drawing.Image)(resources.GetObject("silKaynakbtn.Image")));
-            this.silKaynakbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.silKaynakbtn.Location = new System.Drawing.Point(0, 564);
-            this.silKaynakbtn.Name = "silKaynakbtn";
-            this.silKaynakbtn.Size = new System.Drawing.Size(177, 91);
-            this.silKaynakbtn.TabIndex = 6;
-            this.silKaynakbtn.Text = "Sil";
-            this.silKaynakbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.silKaynakbtn.UseVisualStyleBackColor = false;
-            // 
-            // guncelleKaynakbtn
-            // 
-            this.guncelleKaynakbtn.BackColor = System.Drawing.Color.MistyRose;
-            this.guncelleKaynakbtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guncelleKaynakbtn.FlatAppearance.BorderSize = 0;
-            this.guncelleKaynakbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.guncelleKaynakbtn.Image = ((System.Drawing.Image)(resources.GetObject("guncelleKaynakbtn.Image")));
-            this.guncelleKaynakbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.guncelleKaynakbtn.Location = new System.Drawing.Point(0, 655);
-            this.guncelleKaynakbtn.Name = "guncelleKaynakbtn";
-            this.guncelleKaynakbtn.Size = new System.Drawing.Size(177, 91);
-            this.guncelleKaynakbtn.TabIndex = 7;
-            this.guncelleKaynakbtn.Text = "Guncelle";
-            this.guncelleKaynakbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.guncelleKaynakbtn.UseVisualStyleBackColor = false;
             // 
             // IslemPaneli
             // 

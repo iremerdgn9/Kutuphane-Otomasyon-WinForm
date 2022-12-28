@@ -41,14 +41,14 @@ namespace Kutuphane_Otomasyon_WinForm
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(842, 514);
+            this.dataGridView1.Size = new System.Drawing.Size(1329, 782);
             this.dataGridView1.TabIndex = 0;
             // 
             // KullaniciListeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(842, 514);
+            this.ClientSize = new System.Drawing.Size(1329, 782);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "KullaniciListeForm";
