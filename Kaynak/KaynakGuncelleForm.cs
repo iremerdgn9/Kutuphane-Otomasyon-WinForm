@@ -17,16 +17,10 @@ namespace Kutuphane_Otomasyon_WinForm.Kaynak
             InitializeComponent();
         }
         KutuphaneOtomasyonEntities db = new KutuphaneOtomasyonEntities();
-        public void Listele()
-        {
-            var kullanicilar = db.Kullanicilar.ToList(); //kullanıcıların hepsini buraya listele
-            dataGridView1.DataSource = kullanicilar.ToList(); //veritabanından datagrid veri kaynağını liste tipinde aktarır.
-        }
         private void KaynakGuncelleForm_Load(object sender, EventArgs e)
         {
             var kaynaklar = db.Kaynaklar.ToList();
             dataGridView1.DataSource = kaynaklar.ToList(); //güncelle kaynaklar listelenecek
-            Listele();
         }
 
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e) //direkt hücreye mouse click verdik.

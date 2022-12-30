@@ -117,5 +117,12 @@ namespace Kutuphane_Otomasyon_WinForm
             kSil.MdiParent = this;
             kSil.Show();
         }
+
+        private void guncelleKaynakbtn_Click(object sender, EventArgs e)
+        {
+            Kaynak.KaynakGuncelleForm kGuncel = new Kaynak.KaynakGuncelleForm(); 
+            kGuncel.MdiParent = this;
+            kGuncel.Show();
+        }
     }
 }

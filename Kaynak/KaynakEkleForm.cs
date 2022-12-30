@@ -33,5 +33,14 @@ namespace Kutuphane_Otomasyon_WinForm.Kaynak
             var kliste = db.Kaynaklar.ToList();
             dataGridView1.DataSource = kliste.ToList();
         }
+        public void Listele()
+        {
+            var kullanicilar = db.Kullanicilar.ToList(); //kullanıcıların hepsini buraya listele
+            dataGridView1.DataSource = kullanicilar.ToList(); //veritabanından datagrid veri kaynağını liste tipinde aktarır.
+        }
+        private void KaynakEkleForm_Load(object sender, EventArgs e)
+        {
+            Listele();
+        }
     }
 }

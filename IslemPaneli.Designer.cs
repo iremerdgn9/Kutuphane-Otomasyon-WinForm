@@ -75,13 +75,14 @@ namespace Kutuphane_Otomasyon_WinForm
             this.guncelleKaynakbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.guncelleKaynakbtn.Image = ((System.Drawing.Image)(resources.GetObject("guncelleKaynakbtn.Image")));
             this.guncelleKaynakbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.guncelleKaynakbtn.Location = new System.Drawing.Point(0, 623);
+            this.guncelleKaynakbtn.Location = new System.Drawing.Point(0, 593);
             this.guncelleKaynakbtn.Name = "guncelleKaynakbtn";
-            this.guncelleKaynakbtn.Size = new System.Drawing.Size(177, 91);
+            this.guncelleKaynakbtn.Size = new System.Drawing.Size(203, 85);
             this.guncelleKaynakbtn.TabIndex = 7;
             this.guncelleKaynakbtn.Text = "Guncelle";
             this.guncelleKaynakbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.guncelleKaynakbtn.UseVisualStyleBackColor = false;
+            this.guncelleKaynakbtn.Click += new System.EventHandler(this.guncelleKaynakbtn_Click);
             // 
             // silKaynakbtn
             // 
@@ -91,9 +92,9 @@ namespace Kutuphane_Otomasyon_WinForm
             this.silKaynakbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.silKaynakbtn.Image = ((System.Drawing.Image)(resources.GetObject("silKaynakbtn.Image")));
             this.silKaynakbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.silKaynakbtn.Location = new System.Drawing.Point(0, 532);
+            this.silKaynakbtn.Location = new System.Drawing.Point(0, 508);
             this.silKaynakbtn.Name = "silKaynakbtn";
-            this.silKaynakbtn.Size = new System.Drawing.Size(177, 91);
+            this.silKaynakbtn.Size = new System.Drawing.Size(203, 85);
             this.silKaynakbtn.TabIndex = 6;
             this.silKaynakbtn.Text = "Sil";
             this.silKaynakbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -108,9 +109,9 @@ namespace Kutuphane_Otomasyon_WinForm
             this.ekleKaynakbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ekleKaynakbtn.Image = ((System.Drawing.Image)(resources.GetObject("ekleKaynakbtn.Image")));
             this.ekleKaynakbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ekleKaynakbtn.Location = new System.Drawing.Point(0, 441);
+            this.ekleKaynakbtn.Location = new System.Drawing.Point(0, 423);
             this.ekleKaynakbtn.Name = "ekleKaynakbtn";
-            this.ekleKaynakbtn.Size = new System.Drawing.Size(177, 91);
+            this.ekleKaynakbtn.Size = new System.Drawing.Size(203, 85);
             this.ekleKaynakbtn.TabIndex = 5;
             this.ekleKaynakbtn.Text = "Ekle";
             this.ekleKaynakbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -124,9 +125,9 @@ namespace Kutuphane_Otomasyon_WinForm
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 358);
+            this.button2.Location = new System.Drawing.Point(0, 340);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(177, 83);
+            this.button2.Size = new System.Drawing.Size(203, 83);
             this.button2.TabIndex = 4;
             this.button2.Text = "Kaynaklar";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -136,14 +137,15 @@ namespace Kutuphane_Otomasyon_WinForm
             // guncelleKullanicibtn
             // 
             this.guncelleKullanicibtn.BackColor = System.Drawing.Color.MistyRose;
+            this.guncelleKullanicibtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.guncelleKullanicibtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.guncelleKullanicibtn.FlatAppearance.BorderSize = 0;
             this.guncelleKullanicibtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.guncelleKullanicibtn.Image = ((System.Drawing.Image)(resources.GetObject("guncelleKullanicibtn.Image")));
             this.guncelleKullanicibtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.guncelleKullanicibtn.Location = new System.Drawing.Point(0, 267);
+            this.guncelleKullanicibtn.Location = new System.Drawing.Point(0, 255);
             this.guncelleKullanicibtn.Name = "guncelleKullanicibtn";
-            this.guncelleKullanicibtn.Size = new System.Drawing.Size(177, 91);
+            this.guncelleKullanicibtn.Size = new System.Drawing.Size(203, 85);
             this.guncelleKullanicibtn.TabIndex = 3;
             this.guncelleKullanicibtn.Text = "Güncelle";
             this.guncelleKullanicibtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -153,14 +155,15 @@ namespace Kutuphane_Otomasyon_WinForm
             // silKullanicibtn
             // 
             this.silKullanicibtn.BackColor = System.Drawing.Color.MistyRose;
+            this.silKullanicibtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.silKullanicibtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.silKullanicibtn.FlatAppearance.BorderSize = 0;
             this.silKullanicibtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.silKullanicibtn.Image = ((System.Drawing.Image)(resources.GetObject("silKullanicibtn.Image")));
             this.silKullanicibtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.silKullanicibtn.Location = new System.Drawing.Point(0, 176);
+            this.silKullanicibtn.Location = new System.Drawing.Point(0, 170);
             this.silKullanicibtn.Name = "silKullanicibtn";
-            this.silKullanicibtn.Size = new System.Drawing.Size(177, 91);
+            this.silKullanicibtn.Size = new System.Drawing.Size(203, 85);
             this.silKullanicibtn.TabIndex = 2;
             this.silKullanicibtn.Text = "Sil";
             this.silKullanicibtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -177,7 +180,7 @@ namespace Kutuphane_Otomasyon_WinForm
             this.ekleKullanicibtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ekleKullanicibtn.Location = new System.Drawing.Point(0, 85);
             this.ekleKullanicibtn.Name = "ekleKullanicibtn";
-            this.ekleKullanicibtn.Size = new System.Drawing.Size(177, 91);
+            this.ekleKullanicibtn.Size = new System.Drawing.Size(203, 85);
             this.ekleKullanicibtn.TabIndex = 1;
             this.ekleKullanicibtn.Text = "Ekle";
             this.ekleKullanicibtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -193,7 +196,7 @@ namespace Kutuphane_Otomasyon_WinForm
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(177, 85);
+            this.button1.Size = new System.Drawing.Size(203, 85);
             this.button1.TabIndex = 0;
             this.button1.Text = "Kullanıcılar";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -209,7 +212,7 @@ namespace Kutuphane_Otomasyon_WinForm
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(203, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1158, 100);
+            this.panel2.Size = new System.Drawing.Size(1158, 85);
             this.panel2.TabIndex = 1;
             // 
             // pictureBox1
@@ -218,7 +221,7 @@ namespace Kutuphane_Otomasyon_WinForm
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(210, 100);
+            this.pictureBox1.Size = new System.Drawing.Size(210, 85);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -227,7 +230,7 @@ namespace Kutuphane_Otomasyon_WinForm
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(323, 33);
+            this.label1.Location = new System.Drawing.Point(330, 24);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label1.Size = new System.Drawing.Size(647, 41);
@@ -239,9 +242,9 @@ namespace Kutuphane_Otomasyon_WinForm
             // 
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(203, 100);
+            this.pictureBox5.Location = new System.Drawing.Point(203, 85);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(1158, 612);
+            this.pictureBox5.Size = new System.Drawing.Size(1158, 627);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 2;
             this.pictureBox5.TabStop = false;
