@@ -43,6 +43,7 @@ namespace Kutuphane_Otomasyon_WinForm
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -53,6 +54,7 @@ namespace Kutuphane_Otomasyon_WinForm
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.LightCoral;
+            this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.guncelleKaynakbtn);
             this.panel1.Controls.Add(this.silKaynakbtn);
             this.panel1.Controls.Add(this.ekleKaynakbtn);
@@ -64,7 +66,7 @@ namespace Kutuphane_Otomasyon_WinForm
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(203, 712);
+            this.panel1.Size = new System.Drawing.Size(203, 794);
             this.panel1.TabIndex = 0;
             // 
             // guncelleKaynakbtn
@@ -123,6 +125,7 @@ namespace Kutuphane_Otomasyon_WinForm
             this.button2.BackColor = System.Drawing.Color.IndianRed;
             this.button2.Dock = System.Windows.Forms.DockStyle.Top;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(0, 340);
@@ -192,6 +195,7 @@ namespace Kutuphane_Otomasyon_WinForm
             this.button1.BackColor = System.Drawing.Color.IndianRed;
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(0, 0);
@@ -212,7 +216,7 @@ namespace Kutuphane_Otomasyon_WinForm
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(203, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1158, 85);
+            this.panel2.Size = new System.Drawing.Size(1196, 85);
             this.panel2.TabIndex = 1;
             // 
             // pictureBox1
@@ -244,16 +248,32 @@ namespace Kutuphane_Otomasyon_WinForm
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(203, 85);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(1158, 627);
+            this.pictureBox5.Size = new System.Drawing.Size(1196, 709);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 2;
             this.pictureBox5.TabStop = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.IndianRed;
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(0, 678);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(203, 83);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "Ödünç Ver";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // IslemPaneli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1361, 712);
+            this.ClientSize = new System.Drawing.Size(1399, 794);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -285,5 +305,6 @@ namespace Kutuphane_Otomasyon_WinForm
         private System.Windows.Forms.Button silKaynakbtn;
         private System.Windows.Forms.Button ekleKaynakbtn;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
