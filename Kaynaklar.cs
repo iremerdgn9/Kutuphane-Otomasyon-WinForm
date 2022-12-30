@@ -14,12 +14,21 @@ namespace Kutuphane_Otomasyon_WinForm
     
     public partial class Kaynaklar
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Kaynaklar()
+        {
+            this.Kayitlar = new HashSet<Kayitlar>();
+        }
+    
         public int kaynak_id { get; set; }
         public string kaynak_ad { get; set; }
         public string kaynak_yazar { get; set; }
         public string kaynak_yayınevi { get; set; }
-        public Nullable<int> kaynak_sayfasayisi { get; set; } //nullable: null olabilir demek.
+        public Nullable<int> kaynak_sayfasayisi { get; set; }
         public Nullable<System.DateTime> kaynak_basımtarihi { get; set; }
         public string kaynak_türü { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Kayitlar> Kayitlar { get; set; }
     }
 }
