@@ -28,7 +28,7 @@ namespace Kutuphane_Otomasyon_WinForm.Kullanici
             Listele();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e) //hücrenin içindeki txt contente click verdik.
         {
             kullaniciAdtxt.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             kullaniciSoyadtxt.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
