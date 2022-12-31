@@ -58,5 +58,29 @@ namespace Kutuphane_Otomasyon_WinForm.Kayıt
             dataGridView2.DataSource = bulunanKaynaklar; //bulunankaynakları datagrid'te görünmesini sağladık 
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //kişiyi aldık
+            string secilenKisiTC = TCBultxt.Text; //tc'yi aldık
+            var secilenKisi = db.Kullanicilar.Where(x => x.kullanici_tc.Equals(secilenKisiTC)).FirstOrDefault(); //tcsi seçilen kişinin tc'sine eşit olanı bul
+
+            //kitabı aldık
+            int secilenKitapId = Convert.ToInt32(dataGridView2.CurrentRow.Cells[0].Value); //idyi aldık
+            var secilenKitap = db.Kaynaklar.Where(x => x.kaynak_id == secilenKitapId).FirstOrDefault();
+
+
+            Kayitlar yeniKayit = new Kayitlar();
+            yeniKayit.kitap_id = secilenKitap.kaynak_id;  //kitap_id secilenKitaptan gelir
+            yeniKayit.kullanici_id = secilenKisi.kullanici_id;  //kullanici_id secilenkisiden gelir
+            yeniKayit.alis_tarih = DateTime.Today;  //bugünün tarihi ile alsın
+            yeniKayit.son_tarih = DateTime.Today.AddDays(15); //15 gün sonrası için son tarih hesaplıyor
+            yeniKayit.durum = false;
+            db.Kayitlar.Add(yeniKayit); //yenikayitları ekledik
+            db.SaveChanges(); //değişiklikleri kaydeder
+
+            var kayitList = db.Kayitlar.ToList();
+            dataGridView1.DataSource = kayitList.ToList(); //listeledikten sonra kayıtları tekrar göster
+        }
     }
 }
