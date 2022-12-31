@@ -124,5 +124,14 @@ namespace Kutuphane_Otomasyon_WinForm
             kGuncel.MdiParent = this;
             kGuncel.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e) //ödünç ver butonu
+        {
+            pictureBox5.Visible = false;
+
+            Kayıt.OduncVerForm odunc = new Kayıt.OduncVerForm();
+            odunc.MdiParent = this;
+            odunc.Show();
+        }
     }
 }
