@@ -34,7 +34,9 @@ namespace Kutuphane_Otomasyon_WinForm.Kayıt
             this.TCBultxt = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -51,7 +53,7 @@ namespace Kutuphane_Otomasyon_WinForm.Kayıt
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(72, 75);
+            this.label1.Location = new System.Drawing.Point(44, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(177, 22);
             this.label1.TabIndex = 1;
@@ -59,7 +61,7 @@ namespace Kutuphane_Otomasyon_WinForm.Kayıt
             // 
             // TCBultxt
             // 
-            this.TCBultxt.Location = new System.Drawing.Point(315, 75);
+            this.TCBultxt.Location = new System.Drawing.Point(238, 53);
             this.TCBultxt.Name = "TCBultxt";
             this.TCBultxt.Size = new System.Drawing.Size(227, 26);
             this.TCBultxt.TabIndex = 2;
@@ -67,7 +69,7 @@ namespace Kutuphane_Otomasyon_WinForm.Kayıt
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.OrangeRed;
-            this.button1.Location = new System.Drawing.Point(608, 69);
+            this.button1.Location = new System.Drawing.Point(485, 48);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(97, 37);
             this.button1.TabIndex = 3;
@@ -83,12 +85,23 @@ namespace Kutuphane_Otomasyon_WinForm.Kayıt
             this.label2.Size = new System.Drawing.Size(0, 20);
             this.label2.TabIndex = 4;
             // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(747, 26);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 62;
+            this.dataGridView2.RowTemplate.Height = 28;
+            this.dataGridView2.Size = new System.Drawing.Size(653, 214);
+            this.dataGridView2.TabIndex = 5;
+            // 
             // OduncVerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(1485, 699);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.TCBultxt);
@@ -98,6 +111,7 @@ namespace Kutuphane_Otomasyon_WinForm.Kayıt
             this.Text = "OduncVerForm";
             this.Load += new System.EventHandler(this.OduncVerForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,5 +124,6 @@ namespace Kutuphane_Otomasyon_WinForm.Kayıt
         private System.Windows.Forms.TextBox TCBultxt;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }

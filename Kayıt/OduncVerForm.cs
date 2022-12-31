@@ -20,9 +20,14 @@ namespace Kutuphane_Otomasyon_WinForm.Kayıt
 
         private void OduncVerForm_Load(object sender, EventArgs e)
         {
-            //listeledik
+            //kayıtlar listeledik
             var kayitList = db.Kayitlar.ToList();
             dataGridView1.DataSource = kayitList.ToList();
+
+            //kaynaklar listeledik
+            var kaynakList = db.Kaynaklar.ToList();
+            dataGridView2.DataSource = kaynakList.ToList();
+
 
             //listelenmeyen kaynak ve kullanıcı kolonunu gizledik
             dataGridView1.Columns[6].Visible = false;
