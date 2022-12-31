@@ -50,5 +50,13 @@ namespace Kutuphane_Otomasyon_WinForm.Kayıt
                 label2.Text = "böyle bir kullanıcı yok!...";
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e) //filtreleme işlemini kaynak_ad'ı ile yapıp arama işlemi yapıyoruz.
+        {
+            string gelenAd = textBox1.Text; //kitabın ismini aldık
+            var bulunanKaynaklar = db.Kaynaklar.Where(x => x.kaynak_ad.Contains(gelenAd)).ToList(); //textboxtan gelen değeri herhangi bir kitabın isminde bu değerler geçiyor mu diye dbden sorguladık.
+            dataGridView2.DataSource = bulunanKaynaklar; //bulunankaynakları datagrid'te görünmesini sağladık 
+
+        }
     }
 }
