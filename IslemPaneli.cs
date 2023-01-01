@@ -33,7 +33,7 @@ namespace Kutuphane_Otomasyon_WinForm
             pictureBox5.Visible = true;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //kullanıcılar butonu
         {
             if (ekleKullanicibtn.Visible == false)
             {
@@ -132,6 +132,13 @@ namespace Kutuphane_Otomasyon_WinForm
             Kayıt.OduncVerForm odunc = new Kayıt.OduncVerForm();
             odunc.MdiParent = this;
             odunc.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e) //geri al butonu
+        {
+            Kayıt.GeriAlForm geri = new Kayıt.GeriAlForm();
+            geri.MdiParent = this;
+            geri.Show();
         }
     }
 }

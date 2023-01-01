@@ -35,8 +35,8 @@ namespace Kutuphane_Otomasyon_WinForm.Kaynak
         }
         public void Listele()
         {
-            var kullanicilar = db.Kullanicilar.ToList(); //kullanıcıların hepsini buraya listele
-            dataGridView1.DataSource = kullanicilar.ToList(); //veritabanından datagrid veri kaynağını liste tipinde aktarır.
+            var kaynaklar = db.Kaynaklar.ToList(); //kullanıcıların hepsini buraya listele
+            dataGridView1.DataSource = kaynaklar.ToList(); //veritabanından datagrid veri kaynağını liste tipinde aktarır.
         }
         private void KaynakEkleForm_Load(object sender, EventArgs e)
         {

@@ -22,6 +22,18 @@ namespace Kutuphane_Otomasyon_WinForm.Kullanici
         {
             var kullanicilar = db.Kullanicilar.ToList(); //kullanıcıların hepsini buraya listele
             dataGridView1.DataSource = kullanicilar.ToList();
+
+            dataGridView1.Columns[0].Visible = false; //0.sütun yani kullanıcı_id görünmesin.(gizledik)
+            dataGridView1.Columns[8].Visible = false; //8.sütun yani kayıtlar görünmesin.
+
+            //Sütunların isimlerini değiştirdik.
+            dataGridView1.Columns[1].HeaderText = "Ad";
+            dataGridView1.Columns[2].HeaderText = "Soyad";
+            dataGridView1.Columns[3].HeaderText = "TC";
+            dataGridView1.Columns[4].HeaderText = "e-Mail";
+            dataGridView1.Columns[5].HeaderText = "Tel";
+            dataGridView1.Columns[6].HeaderText = "Ceza";
+            dataGridView1.Columns[7].HeaderText = "Cinsiyet";
         }
         private void KullaniciGuncelleForm_Load(object sender, EventArgs e)
         {
