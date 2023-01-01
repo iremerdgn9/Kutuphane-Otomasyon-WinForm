@@ -207,7 +207,7 @@ namespace Kutuphane_Otomasyon_WinForm.Kullanici
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(977, 612);
+            this.dataGridView1.Size = new System.Drawing.Size(1304, 612);
             this.dataGridView1.TabIndex = 32;
             // 
             // pictureBox1
@@ -227,7 +227,7 @@ namespace Kutuphane_Otomasyon_WinForm.Kullanici
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(1445, 670);
+            this.ClientSize = new System.Drawing.Size(1747, 670);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);

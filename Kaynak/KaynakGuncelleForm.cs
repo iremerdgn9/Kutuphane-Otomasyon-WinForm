@@ -21,6 +21,17 @@ namespace Kutuphane_Otomasyon_WinForm.Kaynak
         {
             var kaynaklar = db.Kaynaklar.ToList();
             dataGridView1.DataSource = kaynaklar.ToList(); //güncelle kaynaklar listelenecek
+
+            dataGridView1.Columns[0].Visible = false; //0.sütun yani kullanıcı_id görünmesin.(gizledik)
+            dataGridView1.Columns[7].Visible = false; //7.sütun yani kayıtlar görünmesin.
+
+            //Sütunların isimlerini değiştirdik.
+            dataGridView1.Columns[1].HeaderText = "Kaynak Adı";
+            dataGridView1.Columns[2].HeaderText = "Yazar";
+            dataGridView1.Columns[3].HeaderText = "Yayınevi";
+            dataGridView1.Columns[4].HeaderText = "Sayfa Sayısı";
+            dataGridView1.Columns[5].HeaderText = "Basım Tarihi";
+            dataGridView1.Columns[6].HeaderText = "Kaynak Türü";
         }
 
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e) //direkt hücreye mouse click verdik.
