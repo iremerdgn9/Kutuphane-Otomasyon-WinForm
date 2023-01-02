@@ -20,22 +20,25 @@ namespace Kutuphane_Otomasyon_WinForm.Kayıt
 
         private void OduncVerForm_Load(object sender, EventArgs e)
         {
-            //kayıtlar listeledik
-            var kayitList = db.Kayitlar.ToList();
+            var kayitList = from kayit in db.Kayitlar
+                            select new { kayit.Kullanicilar.kullanici_ad, kayit.Kaynaklar.kaynak_ad, kayit.alis_tarih, kayit.son_tarih, kayit.durum };
+            ////kayıtlar listeledik
+            //var kayitList = db.Kayitlar.ToList();
             dataGridView1.DataSource = kayitList.ToList();
 
-            //kaynaklar listeledik
+            ////kaynaklar listeledik
             var kaynakList = db.Kaynaklar.ToList();
             dataGridView2.DataSource = kaynakList.ToList();
 
 
-            //listelenmeyen kaynak ve kullanıcı kolonunu gizledik
-            dataGridView1.Columns[6].Visible = false;
-            dataGridView1.Columns[7].Visible = false;
+            ////listelenmeyen kaynak ve kullanıcı kolonunu gizledik
+            //dataGridView1.Columns[6].Visible = false;
+            //dataGridView1.Columns[7].Visible = false;
+            //dataGridView2.Columns[8].Visible = false;
 
-            //kolon adlarını düzenledik
-            dataGridView1.Columns[1].HeaderText = "Kullanıcı";
-            dataGridView1.Columns[2].HeaderText = "Kaynak Ad";
+            ////kolon adlarını düzenledik
+            //dataGridView1.Columns[1].HeaderText = "Kullanıcı";
+            //dataGridView1.Columns[2].HeaderText = "Kaynak Ad";
 
         }
 
@@ -59,7 +62,7 @@ namespace Kutuphane_Otomasyon_WinForm.Kayıt
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) //ödünç ver butonu
         {
             //kişiyi aldık
             string secilenKisiTC = TCBultxt.Text; //tc'yi aldık
@@ -73,6 +76,7 @@ namespace Kutuphane_Otomasyon_WinForm.Kayıt
             Kayitlar yeniKayit = new Kayitlar();
             yeniKayit.kitap_id = secilenKitap.kaynak_id;  //kitap_id secilenKitaptan gelir
             yeniKayit.kullanici_id = secilenKisi.kullanici_id;  //kullanici_id secilenkisiden gelir
+            yeniKayit.Kullanicilar.kullanici_ad = secilenKisi.kullanici_ad;
             yeniKayit.alis_tarih = DateTime.Today;  //bugünün tarihi ile alsın
             yeniKayit.son_tarih = DateTime.Today.AddDays(15); //15 gün sonrası için son tarih hesaplıyor
             yeniKayit.durum = false;

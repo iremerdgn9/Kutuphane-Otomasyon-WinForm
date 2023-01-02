@@ -60,29 +60,61 @@ namespace Kutuphane_Otomasyon_WinForm
             }
         }
 
+        private Kullanici.KullaniciEkleForm ekleForm;
+        private bool ekleKullaniciDurum = false;
         private void EkleKullanicibtn_Click(object sender, EventArgs e)
         { //işlem panelinde ekle butonuna basınca kullanıcı ekle formu açılıyor ve ekleme işlemi yapıyor.
-            Kullanici.KullaniciEkleForm ekleForm= new Kullanici.KullaniciEkleForm();
-            ekleForm.MdiParent = this;
-            ekleForm.Show();
+            if (ekleKullaniciDurum == false)
+            {
+                ekleForm = new Kullanici.KullaniciEkleForm();
+                ekleForm.MdiParent = this;
+                ekleForm.Show();
+                ekleKullaniciDurum = true;
+            }
+            else
+            {
+                ekleForm.Close();
+                ekleKullaniciDurum = false;
+            }
         }
-
+        private KullaniciSilForm kSil;
+        private bool silKullaniciDurum = false;
         private void silKullanicibtn_Click(object sender, EventArgs e)
         {
-            KullaniciSilForm kSil = new KullaniciSilForm(); //sil butonuna tıkladığımızda sil formu açılacak.
-            kSil.MdiParent = this;
-            kSil.Show();
+            if (silKullaniciDurum == false) //her tıkladığımızda form açılmasını engelledik
+            {
+                kSil = new KullaniciSilForm(); //sil butonuna tıkladığımızda sil formu açılacak.
+                kSil.MdiParent = this;
+                kSil.Show();
+                silKullaniciDurum = true;
+            }
+            else
+            {
+                kSil.Close();
+                silKullaniciDurum = false;
+            }
         }
-
+        private Kullanici.KullaniciGuncelleForm kGuncel;
+        private bool guncelleKullaniciDurum = false;
         private void guncelleKullanicibtn_Click(object sender, EventArgs e)
         {
-            Kullanici.KullaniciGuncelleForm kGuncel = new Kullanici.KullaniciGuncelleForm();
-            kGuncel.MdiParent = this;
-            kGuncel.Show();
+            if (guncelleKullaniciDurum == false)
+            {
+                 kGuncel = new Kullanici.KullaniciGuncelleForm();
+                 kGuncel.MdiParent = this;
+                 kGuncel.Show();
+                 guncelleKullaniciDurum = true;
+            }
+            else
+            {
+                kGuncel.Close();
+                guncelleKullaniciDurum = false; //guncelle butonuna her tıkladığımızda sürekli form açılmasını önledik.
+            }
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        Kaynak.KaynakListeForm kliste = new Kaynak.KaynakListeForm();
+        private void button2_Click(object sender, EventArgs e) //kaynaklar butonu
         {
             if (ekleKaynakbtn.Visible == false) 
             {
@@ -90,7 +122,8 @@ namespace Kutuphane_Otomasyon_WinForm
                 silKaynakbtn.Visible = true;
                 guncelleKaynakbtn.Visible = true;
                 pictureBox5.Visible = false;
-
+                kliste.MdiParent = this;
+                kliste.Show();
             }
             else
             {
@@ -98,50 +131,104 @@ namespace Kutuphane_Otomasyon_WinForm
                 silKaynakbtn.Visible = false;
                 guncelleKaynakbtn.Visible = false;
                 pictureBox5.Visible = true;
-
+                kliste.Close();
             }
-
-            Kaynak.KaynakListeForm kliste = new Kaynak.KaynakListeForm();
-            kliste.MdiParent = this;
-            kliste.Show();
         }
-
+        private Kaynak.KaynakEkleForm kEkle;
+        private bool ekleKaynakDurum = false;
         private void ekleKaynakbtn_Click(object sender, EventArgs e)
         { //ekle butonuna basınca kaynak ekle formundan kaynak ekleme işlemi yapılacak.
-            Kaynak.KaynakEkleForm kEkle= new Kaynak.KaynakEkleForm();
-            kEkle.MdiParent = this;
-            kEkle.Show();
-
+            if (ekleKaynakDurum == false)
+            {
+                kEkle= new Kaynak.KaynakEkleForm();
+                kEkle.MdiParent = this;
+                kEkle.Show();
+                ekleKaynakDurum = true;
+            }
+            else
+            {
+                kEkle.Close();
+                ekleKaynakDurum = false;
+            }
         }
 
+        private Kaynak.KaynakSilForm kaynakSil;
+        private bool silKaynakDurum = false;
         private void silKaynakbtn_Click(object sender, EventArgs e)
         {
-            Kaynak.KaynakSilForm kSil = new Kaynak.KaynakSilForm();
-            kSil.MdiParent = this;
-            kSil.Show();
+            if (silKaynakDurum == false)
+            {
+                kaynakSil = new Kaynak.KaynakSilForm();
+                kaynakSil.MdiParent = this;
+                kaynakSil.Show();
+                silKaynakDurum = true;
+            }
+            else
+            {
+                kaynakSil.Close();
+                silKaynakDurum = false;
+            }
+            
         }
 
+        private Kaynak.KaynakGuncelleForm kaynakGuncel;
+        private bool guncelleKaynakDurum = false;
         private void guncelleKaynakbtn_Click(object sender, EventArgs e)
         {
-            Kaynak.KaynakGuncelleForm kGuncel = new Kaynak.KaynakGuncelleForm(); 
-            kGuncel.MdiParent = this;
-            kGuncel.Show();
+            if (guncelleKaynakDurum == false)
+            {
+                kaynakGuncel = new Kaynak.KaynakGuncelleForm(); 
+                kaynakGuncel.MdiParent = this;
+                kaynakGuncel.Show();
+                guncelleKaynakDurum = true;
+            }
+            else
+            {
+                kaynakGuncel.Close();
+                guncelleKaynakDurum = false;
+            }
+           
         }
 
+        private Kayıt.OduncVerForm odunc;
+        private bool oduncVerDurum = false;
         private void button3_Click(object sender, EventArgs e) //ödünç ver butonu
         {
-            pictureBox5.Visible = false;
-
-            Kayıt.OduncVerForm odunc = new Kayıt.OduncVerForm();
-            odunc.MdiParent = this;
-            odunc.Show();
+            if (oduncVerDurum == false)
+            {
+                odunc= new Kayıt.OduncVerForm();
+                pictureBox5.Visible = false;
+                odunc.MdiParent = this;
+                odunc.Show();
+                oduncVerDurum = true;
+            }
+            else
+            {
+                pictureBox5.Visible = true;
+                odunc.Close();
+                oduncVerDurum = false;
+            }
         }
 
+        private Kayıt.GeriAlForm geri;
+        private bool geriAlDurum = false;
         private void button4_Click(object sender, EventArgs e) //geri al butonu
         {
-            Kayıt.GeriAlForm geri = new Kayıt.GeriAlForm();
-            geri.MdiParent = this;
-            geri.Show();
+            if (geriAlDurum == false)
+            {
+                geri = new Kayıt.GeriAlForm();
+                pictureBox5.Visible = false;
+                geri.MdiParent = this;
+                geri.Show();
+                geriAlDurum = true;
+            }
+            else
+            {
+                pictureBox5.Visible = true;
+                geri.Close();
+                geriAlDurum = false;
+            }
+           
         }
     }
 }

@@ -120,17 +120,16 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAABgUExURf///wAAAI+Pj/Ly8jc3N05OTjs7O/r6+mtrawQEBPX19erq6isrKxwcHFJSUs7Ozqys
-        rBYWFnx8fF5eXiMjI7i4uISEhGdnZ3Nzc8XFxb6+vlhYWJiYmNXV1WlpaWJiYgRTT+QAAAGmSURBVHhe
-        7ZvrToNAEIV3LGjpTVGKl1Z9/7fULaP2wqyJycwh5ny/tmWS86VsIbCziRBCyF9YLHUAYTlfNbLe3OrH
-        cO5aOdDc3+g3sVwN8ZkaYXCUL7KJNzjJBxic5YcbXOSLPOmhEEbyRZ71YACj+VLpUX/G86WJmgVGvkjQ
-        FdHMD5oEdn6z0BJX7HxZaYkrhXzZao0npfwHrfGklH890yJHmG/DfC1yhPk2zNciR5hvw3wtcmTK+RXz
-        3WG+DfO1yBHmh9PW/c+jPSA/071g80Wa4f0KLP/zN8jTC5gv0qe01SGGOs3WOsTQpl5HKFKtAxQJewam
-        IAA/BfBJCP4bdugL0Q59Kd6Db0bVsOCCux2/HvJhBtVXPsSg2+2PF7xKBjGrk9M2mGuNLzSgQWbaBm9a
-        48u0DR61xhcaTN3gXWt8oQENMjQoG0S0r9AgQ4NfDEK6CUsG8Gcmfd3tTcEgqKfUNohpaCwZRPX1mgZh
-        bf6GQVhbr2UQ19hsGAS2do8axDywfnNhEL7J4swAsMnjxAC9yQSSj9/mg9/olMFu9SKEkP9FSh9g5xr8
-        mIgqsQAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAHgSURBVGhD7ZhNKKVRHIevISPkK6kpC8lCsmWjlIUtxajR
+        7CZF7JSlhWRta2MhSxtlObMh8j0bidBYzGKaDRamQb6e36lTd3M3Oue996/3qWdx/qnT433vfc99Mykp
+        hUk1ruGSWxlFEbv4gvsaWEQRO6iIS2xCc7ybCH87pRH5pAbTiEJAEXuYRuSbdxNxiIoI5Q3+wZ+4inM4
+        iPUYjRghuXzCbRzHKgxOHfqYc2zEt1KGn7ANu3AIZ/E7/kcfdYXTqL8PSi0eYIiYXJTjV9xAH3SGnRiU
+        JGI8PXiM2ktX6gsGRTE6picRU4oLqL0e8TMGJckYMYPa6xbbNQhJ0sf3RdRe+gd+0CAk2Q/K2FemEn+j
+        9hrWIDRJxnxD7aNHQRQU40/EMWP04b9G7dOqQQyyf2gdaRCJFdQek24VCcXoCf3DreIwggpRkGk6UCH6
+        xjSNvuYV8sutDKPzmEL+uZVhPqJC7tzKMA2okL9uZZgWVIiO96bpRoVsuZVhRlEhOkSaZh4VMuVWhvE/
+        HXrdyig6yj/gPVZoYJU+1NXYdCvDLKP5z4duK72hfMZmDawygboa625llCI8RYX0a2CVAVTEBRZrYBFd
+        Df/GcUwDqyjkBPWmpkQDy+h2UlBKSn7JZF4By4u2ttLDPNUAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

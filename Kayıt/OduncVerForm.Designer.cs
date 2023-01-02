@@ -45,11 +45,11 @@ namespace Kutuphane_Otomasyon_WinForm.Kayıt
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(48, 317);
+            this.dataGridView1.Location = new System.Drawing.Point(48, 344);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1375, 370);
+            this.dataGridView1.Size = new System.Drawing.Size(1531, 384);
             this.dataGridView1.TabIndex = 0;
             // 
             // label1
@@ -92,11 +92,11 @@ namespace Kutuphane_Otomasyon_WinForm.Kayıt
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(747, 86);
+            this.dataGridView2.Location = new System.Drawing.Point(676, 86);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(676, 214);
+            this.dataGridView2.Size = new System.Drawing.Size(903, 252);
             this.dataGridView2.TabIndex = 5;
             // 
             // textBox1
@@ -134,7 +134,7 @@ namespace Kutuphane_Otomasyon_WinForm.Kayıt
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(1485, 699);
+            this.ClientSize = new System.Drawing.Size(1700, 731);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);

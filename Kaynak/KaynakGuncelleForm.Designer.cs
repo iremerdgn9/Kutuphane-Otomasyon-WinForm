@@ -64,12 +64,12 @@ namespace Kutuphane_Otomasyon_WinForm.Kaynak
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Tomato;
-            this.button1.Font = new System.Drawing.Font("Segoe Script", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Font = new System.Drawing.Font("Segoe Script", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.Location = new System.Drawing.Point(87, 426);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(290, 57);
+            this.button1.Size = new System.Drawing.Size(305, 57);
             this.button1.TabIndex = 60;
-            this.button1.Text = "Kaydet";
+            this.button1.Text = "Güncelle";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

@@ -20,8 +20,15 @@ namespace Kutuphane_Otomasyon_WinForm.Kayıt
 
         private void GeriAlForm_Load(object sender, EventArgs e)
         {
+            var kayitList = from kayit in db.Kayitlar
+                            select new { kayit.kayıt_id,kayit.Kullanicilar.kullanici_id,kayit.Kullanicilar.kullanici_ad,kayit.kitap_id, kayit.Kaynaklar.kaynak_ad, kayit.alis_tarih, kayit.son_tarih, kayit.durum };
+
             var kayitlar = db.Kayitlar.Where(x => x.durum == false).ToList(); //Kayıtlar tablosundaki durumu false olanları(geri getirmeyenleri) listele
             dataGridView1.DataSource = kayitlar.ToList();
+
+            //listelenmeyen kaynak ve kullanıcı kolonunu gizledik
+            dataGridView1.Columns[6].Visible = false;
+            dataGridView1.Columns[7].Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e) //geri al butonu
