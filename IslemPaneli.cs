@@ -32,7 +32,10 @@ namespace Kutuphane_Otomasyon_WinForm
             label1.Visible = true;
             pictureBox5.Visible = true;
         }
-
+        KullaniciListeForm kListeForm = new KullaniciListeForm();
+        /// <summary>
+        /// kullanıcı liste ve butonları açar 
+        /// </summary>
         private void button1_Click(object sender, EventArgs e) //kullanıcılar butonu
         {
             if (ekleKullanicibtn.Visible == false)
@@ -43,6 +46,8 @@ namespace Kutuphane_Otomasyon_WinForm
                 label1.Visible = true;
                 pictureBox1.Visible = false;
                 pictureBox5.Visible = false;
+                kListeForm.MdiParent = this; //bunun parent'i IslemPaneli'idir.
+                kListeForm.Show(); //işlem panelinin içinde açılacak.
             }
             else
             {
@@ -51,10 +56,8 @@ namespace Kutuphane_Otomasyon_WinForm
                 guncelleKullanicibtn.Visible = false;
                 label1.Visible = true;
                 pictureBox5.Visible = true;
+                kListeForm.Close(); //listeyi kapatır.
             }
-            KullaniciListeForm kListeForm = new KullaniciListeForm();
-            kListeForm.MdiParent = this; //bunun parent'i IslemPaneli'idir.
-            kListeForm.Show(); //işlem panelinin içinde açılacak.
         }
 
         private void EkleKullanicibtn_Click(object sender, EventArgs e)

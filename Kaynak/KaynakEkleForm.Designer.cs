@@ -63,7 +63,7 @@ namespace Kutuphane_Otomasyon_WinForm.Kaynak
             this.button1.Font = new System.Drawing.Font("Segoe Script", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.Location = new System.Drawing.Point(81, 430);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(282, 49);
+            this.button1.Size = new System.Drawing.Size(305, 49);
             this.button1.TabIndex = 47;
             this.button1.Text = "Kaydet";
             this.button1.UseVisualStyleBackColor = false;

@@ -49,7 +49,7 @@ namespace Kutuphane_Otomasyon_WinForm.Kayıt
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1352, 370);
+            this.dataGridView1.Size = new System.Drawing.Size(1375, 370);
             this.dataGridView1.TabIndex = 0;
             // 
             // label1
@@ -96,7 +96,7 @@ namespace Kutuphane_Otomasyon_WinForm.Kayıt
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(653, 214);
+            this.dataGridView2.Size = new System.Drawing.Size(676, 214);
             this.dataGridView2.TabIndex = 5;
             // 
             // textBox1
