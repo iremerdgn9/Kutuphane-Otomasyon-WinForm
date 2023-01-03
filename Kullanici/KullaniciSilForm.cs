@@ -42,12 +42,25 @@ namespace Kutuphane_Otomasyon_WinForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int secilenId = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value); 
-            //silmek istediğimiz herhangi bir satırın sütünuna tıklayıp sil butonuna basınca silme işlemi yapıyor.
-            var kullanici = db.Kullanicilar.Where(x => x.kullanici_id == secilenId).FirstOrDefault();
-            db.Kullanicilar.Remove(kullanici);
-            db.SaveChanges();
-            Listele();
+
+
+            DialogResult silinsinMi = MessageBox.Show("Silmek istediğinizden emin misiniz? Geri dönüş yok.", "Silme İşlemi",
+                MessageBoxButtons.YesNo);
+            if (silinsinMi == DialogResult.Yes)
+            {
+                int secilenId = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value); 
+                //silmek istediğimiz herhangi bir satırın sütünuna tıklayıp sil butonuna basınca silme işlemi yapıyor.
+                var kullanici = db.Kullanicilar.Where(x => x.kullanici_id == secilenId).FirstOrDefault();
+                db.Kullanicilar.Remove(kullanici);
+                db.SaveChanges();
+                Listele();
+                MessageBox.Show("Silindi");
+            }
+            else
+            {
+                MessageBox.Show("Silme Lazım olur");
+            }
+            
         }
     }
 }
